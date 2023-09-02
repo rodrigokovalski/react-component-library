@@ -1,0 +1,19 @@
+# Step by step
+
+- created a repository called react-component-library
+- runned `npm init` and skipped all the default values to create a simple package.json
+- `npm install react typescript @types/react --save-dev`
+
+## Adding typescript
+- `npx tsc --init` to create tsconfig.json
+
+## Bundle
+- webpack (good at creating single file bundles for large applications) / rollup (particularly good in making bundles for libraries)
+- Rollup is a javascript bundler. It turns everything into a file that the all browsers can understand.
+- `npm install rollup`
+- plugins to rollup:
+- npm install rollup @rollup/plugin-node-resolve @rollup/plugin-commonjs @rollup/plugin-typescript rollup-plugin-dts --save-dev
+- added rollup.config.js
+- rollup -c  -> Runs rollup with the configuration file rollup.config.js
+- git init
+- git ignore node_modules and dist
