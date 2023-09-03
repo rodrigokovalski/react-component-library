@@ -17,3 +17,17 @@
 - rollup -c  -> Runs rollup with the configuration file rollup.config.js
 - git init
 - git ignore node_modules and dist
+- git remote add origin git@...
+- git push -u origin master
+- configure .npmrc on your home directory
+
+## jest
+- npm install @testing-library/react jest @types/jest --save-dev
+
+## babel
+- npm install @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript babel-jest --save-dev
+
+- npm install --save-dev jest-environment-jsdom
+
+- npm i @testing-library/jest-dom --save-dev
+- npm install @types/testing-library__jest-dom -D
