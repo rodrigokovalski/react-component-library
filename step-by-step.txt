@@ -31,3 +31,7 @@
 
 - npm i @testing-library/jest-dom --save-dev
 - npm install @types/testing-library__jest-dom -D
+
+## Storybook
+
+- npx sb init
