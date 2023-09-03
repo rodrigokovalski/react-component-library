@@ -50,3 +50,9 @@ https://www.mohammadfaisal.dev/blog/how-to-add-linting-and-formatting-for-your-r
 - npm install eslint-config-airbnb --save-dev
 
 - npm install @babel/eslint-parser --save-dev
+
+## Husky
+
+- npm install --save-dev husky -D
+
+npm install --save-dev lint-staged -D
