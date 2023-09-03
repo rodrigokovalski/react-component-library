@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 import '@testing-library/jest-dom';
-import { render, screen } from "@testing-library/react";
-import Button from "./Button";
+import { render, screen } from '@testing-library/react';
+import Button from './Button';
 
-describe("<Button />", () => {
+describe('<Button />', () => {
     it('should render the component correctly', () => {
-        render(<Button data-testid="Button" label="Button"></Button>);
+        render(<Button data-testid='Button' label='Button' />);
 
-        const buttonElement = screen.getByTestId("Button");
+        const buttonElement = screen.getByTestId('Button');
 
         expect(buttonElement).toBeInTheDocument();
-    })
+    });
 });

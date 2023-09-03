@@ -35,3 +35,18 @@
 ## Storybook
 
 - npx sb init
+
+#ESlint
+https://www.mohammadfaisal.dev/blog/how-to-add-linting-and-formatting-for-your-react-app
+
+- npm install eslint --save-dev
+
+- npm install --save-dev eslint prettier
+
+- npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+
+- npm install --save-dev eslint-plugin-react eslint-plugin-react-hooks
+
+- npm install eslint-config-airbnb --save-dev
+
+- npm install @babel/eslint-parser --save-dev
