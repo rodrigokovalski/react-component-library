@@ -38,6 +38,8 @@ module.exports = {
         "**/*.spec.ts",
         "**/*.spec.tsx",
         "**/*.d.ts",
-        "rollup.config.mjs"
+        "rollup.config.mjs",
+        "**/*.stories.ts",
+        "**/*.stories.tsx",        
     ] 
 }

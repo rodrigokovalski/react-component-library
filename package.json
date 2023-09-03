@@ -4,7 +4,7 @@
   "description": "A react components library",
   "scripts": {
     "rollup": "rollup -c",
-    "test": "jest",
+    "test": "cross-env jest --collectCoverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint": "eslint  --fix src/**/*.tsx",
@@ -34,8 +34,10 @@
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.4",
     "@types/react": "^18.2.21",
+    "@types/styled-components": "^5.1.26",
     "@types/testing-library__jest-dom": "^6.0.0",
     "babel-jest": "^29.6.4",
+    "cross-env": "^7.0.3",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
@@ -69,7 +71,16 @@
     }
   },
   "lint-staged": {
-    "*.+(js|jsx)": ["eslint --fix", "git add"],
-    "*.+(json|css|md)": ["prettier --write", "git add"]
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "styled-components": "^6.0.7"
   }
 }
