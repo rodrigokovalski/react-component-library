@@ -21,16 +21,16 @@ const meta: Meta<typeof Button> = {
         },
         fillColor: {
             control: 'color',
-            description: 'It defines the hex value for the background or the border + color of the button.'
+            description: 'It defines the hex value for the background or the border + color of the button.',
         },
         fullWidth: {
             control: 'boolean',
-            description: 'If true, the button will max content of the available space.'
-        }
+            description: 'If true, the button will max content of the available space.',
+        },
     },
     args: {
         children: 'Click me!',
-        fillColor: '#000000'
+        fillColor: '#000000',
     },
     tags: ['autodocs'],
 };
@@ -59,9 +59,9 @@ export const FullWidth: Story = {
     },
     decorators: [
         (Story) => (
-          <div style={{ width: '300px' }}>
-            <Story />
-          </div>
+            <div style={{ width: '300px' }}>
+                <Story />
+            </div>
         ),
     ],
 } as Meta<ButtonProps>;
