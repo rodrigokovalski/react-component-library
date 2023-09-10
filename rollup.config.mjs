@@ -2,6 +2,8 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
+import replace from 'rollup-plugin-replace';
+import PeerDepsExternalPlugin from 'rollup-plugin-peer-deps-external';
 
 import { readFileSync } from "fs";
 const packageJson = JSON.parse(readFileSync('package.json', {encoding: 'utf8'}));
@@ -23,9 +25,13 @@ export default [
             }
         ],
         plugins: [
+            PeerDepsExternalPlugin(),
             resolve(),
             commonjs(),
             typescript({ tsconfig: "./tsconfig.json" }),
+            replace({
+                'process.env.NODE_ENV': JSON.stringify( 'production' )
+            })
         ]
     },
     {
